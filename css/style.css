@@ -171,6 +171,14 @@ body {
 	
 }
 
+@media only screen and (max-width: 768px) {
+  .left-overlay-box {
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+}
+
+
 /*-- /Right-side Rera Box --*/
 /*-- Navigation bar --*/
 /* CUSTOMIZE THE NAVBAR
@@ -3113,4 +3121,5 @@ p.lead {
 }
 
 /*-- Responsive Design Ends Here --*/
+
 
