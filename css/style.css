@@ -1151,7 +1151,7 @@ h2.typoh2 {
 /*-- About Page Starts Here --*/
 /*-- About Banner --*/
 body.extra-page {
-	background:url(../images/about-page.jpg) no-repeat;
+	background:#f8f6f2;
     background-attachment: fixed;
     background-position: center;
     background-size:100% 100%;
@@ -3113,3 +3113,4 @@ p.lead {
 }
 
 /*-- Responsive Design Ends Here --*/
+
