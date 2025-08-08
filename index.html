@@ -211,65 +211,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="gallery-container">
     <h2 class="gallery-title">Gallery </h2>
     <div class="gallery-grid" id="gallery">
-    	<script>
-    	const imagePaths = [
-      'Arieal-Render.png',
-      'Day-Render-1.png',
-      'Day-Render-2.png',
-      'Night-Render-3.png',
-      'Night-Render-1.png',
-      'Balcony-Render.png',
-      'Garden.png',
-      'Gym.png',
-      'Multi-Purpose-Court.png',
-      'Kitchen.png',
-	  'Living-Room.png',
-	  'Master-Bedroom.png',
-	  'Lobby.png',
-	  'Lobby 3.png',
-	  'Multi-Purpose-Hall.png',
-	  'Indoor-Games.png',
-	  'Podium-1.png'
-    ];
-
-    const gallery = document.getElementById('gallery');
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    let currentIndex = 0;
-
-    // Populate gallery
-    imagePaths.forEach((src, index) => {
-      const img = document.createElement('img');
-      img.src = src;
-      img.alt = `Image ${index + 1}`;
-      img.onclick = () => openModal(index);
-      gallery.appendChild(img);
-    });
-
-    function openModal(index) {
-      currentIndex = index;
-      modal.style.display = 'block';
-      modalImg.src = imagePaths[currentIndex];
-    }
-
-    function closeModal() {
-      modal.style.display = 'none';
-    }
-
-    function changeImage(direction) {
-      currentIndex += direction;
-      if (currentIndex < 0) currentIndex = imagePaths.length - 1;
-      if (currentIndex >= imagePaths.length) currentIndex = 0;
-      modalImg.src = imagePaths[currentIndex];
-    }
-
-    // Close modal on outside click
-    window.onclick = function (e) {
-      if (e.target == modal) {
-        closeModal();
-      }
-    }
-	</script>
 	</div>
 </div>
   <div id="imageModal" class="modal">
@@ -429,6 +370,67 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	});
 </script>
 <!-- /js for pricing table pop up  -->
+<!--JSON for image gallery section-->
+<script>
+    	const imagePaths = [
+      'Arieal-Render.png',
+      'Day-Render-1.png',
+      'Day-Render-2.png',
+      'Night-Render-3.png',
+      'Night-Render-1.png',
+      'Balcony-Render.png',
+      'Garden.png',
+      'Gym.png',
+      'Multi-Purpose-Court.png',
+      'Kitchen.png',
+	  'Living-Room.png',
+	  'Master-Bedroom.png',
+	  'Lobby.png',
+	  'Lobby 3.png',
+	  'Multi-Purpose-Hall.png',
+	  'Indoor-Games.png',
+	  'Podium-1.png'
+    ];
+
+    const gallery = document.getElementById('gallery');
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    let currentIndex = 0;
+
+    // Populate gallery
+    imagePaths.forEach((src, index) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = `Image ${index + 1}`;
+      img.onclick = () => openModal(index);
+      gallery.appendChild(img);
+    });
+
+    function openModal(index) {
+      currentIndex = index;
+      modal.style.display = 'block';
+      modalImg.src = imagePaths[currentIndex];
+    }
+
+    function closeModal() {
+      modal.style.display = 'none';
+    }
+
+    function changeImage(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = imagePaths.length - 1;
+      if (currentIndex >= imagePaths.length) currentIndex = 0;
+      modalImg.src = imagePaths[currentIndex];
+    }
+
+    // Close modal on outside click
+    window.onclick = function (e) {
+      if (e.target == modal) {
+        closeModal();
+      }
+    }
+	</script>
+<!--/ JSON for image gallery section-->
  <!--JSON for form submissions-->
 <script>
   document.getElementById("contact-form").addEventListener("submit", async function (e) {
@@ -536,3 +538,4 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- /js files -->
 </body>
 </html>
+
