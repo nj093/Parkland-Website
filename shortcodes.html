@@ -149,6 +149,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	ul hr{
 		background-color: black;
 	}
+	@media (max-width: 992px) {
+  .matrix-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .matrix-container {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 36px; /* Reduce heading size */
+  }
+
+  ul li {
+    font-size: 16px; /* Adjust text size for readability */
+  }
+}
 
 	
   </style>
@@ -311,3 +331,4 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- /js files -->
 </body>
 </html>
+
