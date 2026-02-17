@@ -497,33 +497,98 @@ section.info p span {
 /*-- count up timer section --*/
 .counter-section {
     display: flex;
+    flex-wrap: wrap; /* allows wrapping */
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     padding: 80px 20px;
-    background: #f8f6f2;
+    background:#f8f6f2;
+    color: white;
     text-align: center;
 }
 
 .counter-box {
-    flex: 1;
-    max-width: 250px;
+    flex: 1 1 250px; /* responsive flex basis */
+    max-width: 300px;
+    min-width: 200px;
 }
 
 .counter {
-    color:#727c6d;
+	color:#727c6d;
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: 'Avenir Next', sans-serif;
+	font-family:'Avenir Next', sans-serif;
 }
+
 .counter-box p {
-    color:#727c6d;
-    font-size: 20px;
+	color:#727c6d;
+    font-size: 18px;
     letter-spacing: 1px;
-    font-weight:bold;
-    font-family: 'Avenir Next', sans-serif;
+    margin: 0;
+	font-weight: bold;
+	font-family:'Avenir Next', sans-serif;
 }
+
+/* ========== Large Tablets (992px and below) ========== */
+@media (max-width: 992px) {
+    .counter {
+        font-size: 42px;
+    }
+
+    .counter-section {
+        gap: 30px;
+        padding: 60px 20px;
+    }
+}
+
+/* ========== Tablets (768px and below) ========== */
+@media (max-width: 768px) {
+    .counter-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .counter-box {
+        flex: 1 1 45%; /* 2 columns */
+        max-width: 45%;
+    }
+
+    .counter {
+        font-size: 38px;
+    }
+}
+
+/* ========== Small Phones (576px and below) ========== */
+@media (max-width: 576px) {
+    .counter-section {
+        flex-direction: column;
+        padding: 50px 15px;
+        gap: 30px;
+    }
+
+    .counter-box {
+        max-width: 100%;
+    }
+
+    .counter {
+        font-size: 34px;
+    }
+
+    .counter-box p {
+        font-size: 16px;
+    }
+}
+
+/* ========== Extra Small Devices (400px and below) ========== */
+@media (max-width: 400px) {
+    .counter {
+        font-size: 30px;
+    }
+
+    .counter-box p {
+        font-size: 14px;
+    }
 /*-- count up timer section --*/
 /*-- Services section --*/
 section.our-services {
@@ -3181,6 +3246,7 @@ p.lead {
 }
 
 /*-- Responsive Design Ends Here --*/
+
 
 
 
