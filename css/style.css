@@ -331,6 +331,63 @@ nav a:focus {
 	transform: rotate(0deg) translateX(50%);
 }
 /*-- /Navigation --*/
+/*-- Whatsapp chat icon --*/
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+}
+.whatsapp-float:hover {
+    background: #1ebe5d;
+    transform: scale(1.1);
+    color: #f8f6f2;
+}
+.whatsapp-float::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(37, 211, 102, 0.5);
+    animation: pulse 2s infinite;
+    z-index: -1;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    70% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@media (max-width: 576px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+/*-- /Whatsapp chat icon --*/
 /*-- banner section --*/
 section.banner {
     margin-top: -86px;
@@ -437,6 +494,37 @@ section.info p span {
 	text-align:center;
 }
 /*-- /info section --*/
+/*-- count up timer section --*/
+.counter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 20px;
+    background: #f8f6f2;
+    text-align: center;
+}
+
+.counter-box {
+    flex: 1;
+    max-width: 250px;
+}
+
+.counter {
+    color:#727c6d;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Avenir Next', sans-serif;
+}
+.counter-box p {
+    color:#727c6d;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight:bold;
+    font-family: 'Avenir Next', sans-serif;
+}
+/*-- count up timer section --*/
 /*-- Services section --*/
 section.our-services {
 	padding:100px 0 30px;
@@ -3093,6 +3181,7 @@ p.lead {
 }
 
 /*-- Responsive Design Ends Here --*/
+
 
 
 
