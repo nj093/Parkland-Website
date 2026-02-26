@@ -126,7 +126,6 @@ body {
 /*-- /Font Face Paragraph --*/
 
 /*-- Right-side Rera Box --*/
-
 .left-overlay-box {
   position:absolute;        /* Keeps it in place even when scrolling */
   top: 23%;               /* Vertically centers it */
@@ -140,18 +139,15 @@ body {
   border-bottom-left-radius: 10px;
 
 }
-
 .left-overlay-box .qr-rera-img{
 	padding-left: 50px;
 	padding-top: 6px;
 }
-
 .left-overlay-box .rera-logo{
 	padding-top: 10px;
 	padding-left: 12px;
 	border-radius: 5px;
 }
-
 .left-overlay-box h4{
 	font-family:'Balgon Serif', serif;
 	font-weight: 400;
@@ -160,7 +156,6 @@ body {
 	padding-left: 20px;
 	font-size: x-large;
 	align-items: center;
-
 }
 .rera-name{
 	font-size: 22px;
@@ -168,21 +163,16 @@ body {
 	color: #f8f6f2;
 	font-family:'Balgon Serif', serif;
 	max-height: 0;
-	
 }
-
 @media (max-width: 768px) {
   .left-overlay-box {
     display: none;
   }
 }
-
-
-
 /*-- /Right-side Rera Box --*/
+
 /*-- Navigation bar --*/
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
+/* CUSTOMIZE THE NAVBAR -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -1281,7 +1271,6 @@ h2.typoh2 {
 }
 /*-- //Typography-Page-Styling --*/
 
-
 /*-- About Page Starts Here --*/
 /*-- About Banner --*/
 body.extra-page {
@@ -1407,7 +1396,7 @@ figure:hover{
 	transform: scale(1.5);
 }
 /*-- /About Content --*/
-/*-- About Customers --*/
+/*-- About Developers --*/
 section.customers {
 	padding:80px 0 100px;
 }
@@ -1446,7 +1435,7 @@ section.customers ul.social-icons {
 	padding:0;
 	text-align:center;
 }
-/*-- /About Customers --*/
+/*-- /About Developers --*/
 /*-- About Page Ends Here --*/
 /*-- Portfolio Page Starts Here --*/
 /*-- Portfolio Header --*/
@@ -3247,10 +3236,4 @@ p.lead {
 }
 
 /*-- Responsive Design Ends Here --*/
-
-
-
-
-
-
 
